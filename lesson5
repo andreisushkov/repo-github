@@ -1,0 +1,56 @@
+package lesson_5;
+
+
+
+public class Collaborator {
+    String name;
+    String appointment;
+    String email;
+    String numberPhone;
+    int salary;
+    int age;
+
+
+
+    public Collaborator(String _name, String _appointment, String _email, String _numberPhone, int _salary, int _age ) {
+    name = _name;
+    appointment = _appointment;
+    email = _email;
+    numberPhone = _numberPhone;
+    salary = _salary;
+    age = _age;
+    }
+
+
+
+    public void info() {
+        System.out.println( name + " " + appointment + " " + email + " " + numberPhone + " " + salary + " " + age);
+    }
+
+
+
+    }
+    package lesson_5;
+
+public class Main {
+    public static void main(String[] args) {
+        Collaborator[] arrayPerson = new Collaborator[5];
+        arrayPerson[0] = new Collaborator("Aleksey", "Sheff","shef@mail.ru", "78777777777",4000,32);
+        arrayPerson[1] = new Collaborator("Oleg", "Substitute", "Pomoshnic@mail.ru", "89997777777",3000,52);
+        arrayPerson[2] = new Collaborator("David", "Secretary", "secret@mail.ru", "89999999977", 2500,18);
+        arrayPerson[3] = new Collaborator("Daria", "Assistant", "assistant@mail.ru", "87777777666",2000,62);
+        arrayPerson[4] =new Collaborator("Ruslan", "Jard-keeper", "jard-keeper@mail.ru", "96666666654",1500,68);
+        for (int i = 0; i < arrayPerson.length; i++) {
+            if (arrayPerson[i].age > 40) {
+                System.out.println(arrayPerson[i].name);
+            }
+
+        }
+
+
+
+        Collaborator collaborator1 = new Collaborator("Andrei", "Programmer", "Andreisushkov@mail.ru",
+                "89655860063", 2000, 32);
+
+
+
